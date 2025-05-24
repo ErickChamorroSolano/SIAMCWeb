@@ -1,5 +1,8 @@
 ﻿<%@ Master Language="VB" AutoEventWireup="true" CodeBehind="Site.master.vb" Inherits="SIAMCWeb.SiteMaster" %>
 
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="act" %>
+<%@ Register Src="~/UserControls/PopupNotification.ascx" TagName="PopupNotification" TagPrefix="uc1" %>
+
 <!DOCTYPE html>
 
 <html lang="es">
@@ -19,10 +22,8 @@
 </head>
 <body>
     <form runat="server">
-        <asp:ScriptManager runat="server">
+        <%--<asp:ScriptManager runat="server">
             <Scripts>
-                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
-                <%--Framework Scripts--%>
                 <asp:ScriptReference Name="MsAjaxBundle" />
                 <asp:ScriptReference Name="jquery" />
                 <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
@@ -34,9 +35,11 @@
                 <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
                 <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
                 <asp:ScriptReference Name="WebFormsBundle" />
-                <%--Site Scripts--%>
             </Scripts>
-        </asp:ScriptManager>
+        </asp:ScriptManager>--%>
+
+        <act:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" AsyncPostBackTimeout="5000" EnableScriptGlobalization="true"/>
+        <uc1:PopupNotification ID="PopupNotification1" runat="server"/>
 
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
             <div class="container">

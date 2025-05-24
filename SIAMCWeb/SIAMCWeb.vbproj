@@ -49,6 +49,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.20820.16598, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.3.0.20820.3.0.20820\lib\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
     </Reference>
@@ -203,6 +206,42 @@
     <Content Include="Scripts\jquery-3.7.0.slim.js" />
     <Content Include="Scripts\jquery-3.7.0.slim.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\PopupNotification\external\jquery\jquery.js" />
+    <Content Include="Scripts\PopupNotification\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Scripts\PopupNotification\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Scripts\PopupNotification\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Scripts\PopupNotification\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Scripts\PopupNotification\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Scripts\PopupNotification\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Scripts\PopupNotification\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Scripts\PopupNotification\images\ui-bg_inset-soft_55_096c0d_1x100.png" />
+    <Content Include="Scripts\PopupNotification\images\ui-bg_inset-soft_70_8cbe01_1x100.png" />
+    <Content Include="Scripts\PopupNotification\images\ui-icons_222222_256x240.png" />
+    <Content Include="Scripts\PopupNotification\images\ui-icons_2b3a00_256x240.png" />
+    <Content Include="Scripts\PopupNotification\images\ui-icons_444444_256x240.png" />
+    <Content Include="Scripts\PopupNotification\images\ui-icons_454545_256x240.png" />
+    <Content Include="Scripts\PopupNotification\images\ui-icons_5bfb09_256x240.png" />
+    <Content Include="Scripts\PopupNotification\images\ui-icons_777620_256x240.png" />
+    <Content Include="Scripts\PopupNotification\images\ui-icons_777777_256x240.png" />
+    <Content Include="Scripts\PopupNotification\images\ui-icons_888888_256x240.png" />
+    <Content Include="Scripts\PopupNotification\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Scripts\PopupNotification\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Scripts\PopupNotification\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Scripts\PopupNotification\jquery-ui.css" />
+    <Content Include="Scripts\PopupNotification\jquery-ui.js" />
+    <Content Include="Scripts\PopupNotification\jquery-ui.min.css" />
+    <Content Include="Scripts\PopupNotification\jquery-ui.min.js" />
+    <Content Include="Scripts\PopupNotification\jquery-ui.structure.css" />
+    <Content Include="Scripts\PopupNotification\jquery-ui.structure.min.css" />
+    <Content Include="Scripts\PopupNotification\jquery-ui.theme.css" />
+    <Content Include="Scripts\PopupNotification\jquery-ui.theme.min.css" />
+    <Content Include="Scripts\PopupNotification\jquery.js" />
+    <Content Include="Scripts\PopupNotification\jquery.pnotify.default.css" />
+    <Content Include="Scripts\PopupNotification\jquery.pnotify.default.icons.css" />
+    <Content Include="Scripts\PopupNotification\jquery.pnotify.js" />
+    <Content Include="Scripts\PopupNotification\jquery.pnotify.min.js" />
+    <Content Include="Scripts\PopupNotification\NotificationBottom.js" />
+    <Content Include="Scripts\PopupNotification\NotificationsCustom.css" />
     <Content Include="Scripts\WebForms\DetailsView.js" />
     <Content Include="Scripts\WebForms\Focus.js" />
     <Content Include="Scripts\WebForms\GridView.js" />
@@ -225,7 +264,9 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Bundle.config" />
+    <Content Include="UserControls\PopupNotification.ascx" />
     <Content Include="Web.config" />
+    <Content Include="Scripts\PopupNotification\package.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -260,6 +301,7 @@
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\InterfazMaster.vb" />
     <Compile Include="Login.aspx.designer.vb">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
@@ -306,6 +348,13 @@
     </Compile>
     <Compile Include="Site.Master.vb">
       <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PopupNotification.ascx.designer.vb">
+      <DependentUpon>PopupNotification.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PopupNotification.ascx.vb">
+      <DependentUpon>PopupNotification.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.vb">

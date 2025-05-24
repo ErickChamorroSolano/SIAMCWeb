@@ -11,14 +11,5 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class _Default
-
-    '''<summary>
-    '''Control btnlearn.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents btnlearn As Global.System.Web.UI.WebControls.Button
+Partial Public Class PopupNotification
 End Class

@@ -1,0 +1,159 @@
+﻿<style type="text/css">
+			/* <![CDATA[ */
+			html, body {
+				font-family: 'Palatino Linotype','Book Antiqua',Palatino,serif;
+				font-size: .92em;
+			}
+			.wrapper {
+				background: transparent url(includes/watermark-small.png) no-repeat fixed bottom right;
+				padding: 10px;
+			}
+			.wrapper.background {
+				background: transparent url(includes/hoot.jpg) repeat scroll top center;
+				/* http://www.flickr.com/photos/barloventomagico/2435316564/ */
+			}
+			.wrapper.background, .wrapper.background a, .wrapper.background .ui-widget-content {
+				color: white;
+				text-shadow: 2px 2px 1px black;
+			}
+			#header {
+				height: 68px;
+				position: relative;
+			}
+			#switcher-container {
+				position: absolute;
+				top: 5px;
+				right: 5px;
+			}
+			#header img.header {
+				position: absolute;
+			}
+			#header h1.header {
+				text-align: center;
+			}
+			.main-description {
+				font-size: 1.2em;
+			}
+			h2 {
+				margin: .83em 0 .1em 0;
+			}
+			p {
+				margin: 1em 0 .5em 0;
+			}
+			.featurelist {
+				background: transparent none no-repeat 0 0 !important;
+				margin: .5em 10px .5em 0;
+				padding: .5em;
+				float: left;
+			}
+			.featurelist ul {
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+			}
+			.featurelist ul a {
+				text-decoration: underline !important;
+			}
+			.featurelist ul .ui-icon {
+				display: inline-block;
+				position: relative;
+				top: 4px;
+				margin-right: .3em;
+			}
+			.featurelist ul img {
+				vertical-align: middle;
+				border: none 0;
+			}
+			.pf-group {
+				background: transparent none no-repeat 0 0 !important;
+				padding: 4px;
+				margin: 5px auto;
+			}
+			.ui-widget {
+				font-size: 75% !important;
+			}
+			.pf-group input.ui-button {
+				padding: 2px !important;
+				font-size: .92em !important;
+				margin-bottom: 3px;
+			}
+
+			/* Custom styled notice CSS */
+			.ui-pnotify.custom {
+				font-family: "Palatino Linotype","Book Antiqua",Palatino,serif;
+				font-weight: bold;
+				text-shadow: 1px 1px 0.5px black;
+			}
+			.ui-pnotify.custom .ui-pnotify-container {
+				background-color: #666;
+				background-image: none;
+				border: none;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				border-radius: 10px;
+			}
+			.ui-pnotify.custom .ui-pnotify-title {
+				font-size: 15pt;
+				color: #FFF;
+			}
+			.ui-pnotify.custom .ui-pnotify-text {
+				font-size: 11pt;
+				color: #FFF;
+			}
+			.ui-pnotify.custom .ui-pnotify-closer {
+				position: absolute;
+				bottom: 5px;
+				right: 5px;
+			}
+			.ui-pnotify.custom .ui-pnotify-icon {
+				float: right;
+			}
+			.ui-pnotify.custom .picon {
+				margin: 3px;
+				width: 33px;
+				height: 33px;
+			}
+
+			/* Alternate stack initial positioning. */
+			.ui-pnotify.stack-topleft {
+				top: 15px;
+				left: 15px;
+				right: auto;
+			}
+			.ui-pnotify.stack-bottomleft {
+				bottom: 15px;
+				left: 15px;
+				top: auto;
+				right: auto;
+			}
+			/* This one is done through code, to show how it is done. Look down
+			   at the stack_bottomright variable in the JavaScript below. */
+			.ui-pnotify.stack-bottomright {
+				/* These are just CSS default values to reset the pnotify CSS. */
+				right: auto;
+				top: auto;
+			}
+			.ui-pnotify.stack-custom {
+				top: 20%;
+				left: 20%;
+				right: auto;
+			}
+			.ui-pnotify.stack-custom2 {
+				top: auto;
+				left: auto;
+				bottom: 20%;
+				right: 20%;
+			}
+			/* ]]> */
+		</style>
+		<!--[if lt IE 8]>
+		<style type="text/css">
+			.featurelist ul {
+				padding-left: 1em;
+				list-style-type: disc;
+			}
+			.featurelist ul .ui-icon {
+				display: none;
+			}
+		</style>
+		<![endif]-->
